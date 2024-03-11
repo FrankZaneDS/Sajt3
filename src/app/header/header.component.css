@@ -1,6 +1,6 @@
 .container {
   position: absolute;
-  z-index: 2;
+  z-index: 1500;
   left: 50%;
   transform: translateX(-50%);
   width: 1500px;
