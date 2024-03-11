@@ -1,0 +1,25 @@
+li {
+  height: 50px;
+}
+ul {
+  height: 150px;
+  margin: auto;
+  padding: auto;
+}
+.col-8 {
+  margin: auto;
+  padding: auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  height: 600px;
+}
+.title {
+  height: 100px;
+}
+.bottom {
+  margin-bottom: 100px;
+}
+
+button {
+  font-size: 30px;
+}

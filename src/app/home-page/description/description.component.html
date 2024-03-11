@@ -1,0 +1,8 @@
+<div class="container-fluid pt-5">
+  <div class="col-12 d-flex justify-content-center my-5">
+    <h1>How does it work?</h1>
+  </div>
+  <div class="col-12 d-flex flex-column" *ngFor="let item of items">
+    <app-disc [item]="item"></app-disc>
+  </div>
+</div>

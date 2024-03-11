@@ -1,0 +1,42 @@
+<div class="title col-12 d-flex justify-content-center mt-5">
+  <h1 style="font-size: 50px">Browse Topics</h1>
+</div>
+<ul
+  ngbNav
+  #nav="ngbNav"
+  [(activeId)]="active"
+  class="nav-tabs justify-content-center w-75"
+>
+  <li class="my-0" [ngbNavItem]="1">
+    <button ngbNavLink style="width: 300px">One</button>
+    <ng-template ngbNavContent>
+      <div class="col-8 d-flex justify-content-center">
+        <ng-container *ngFor="let category of categories">
+          <app-category [category]="category"></app-category>
+        </ng-container>
+      </div>
+    </ng-template>
+  </li>
+  <li class="h-25" [ngbNavItem]="2">
+    <button style="width: 300px" ngbNavLink>Two</button>
+    <ng-template ngbNavContent>
+      <div class="col-8 d-flex justify-content-center">
+        <ng-container *ngFor="let category of categories">
+          <app-category [category]="category"></app-category>
+        </ng-container>
+      </div>
+    </ng-template>
+  </li>
+  <li class="h-25" [ngbNavItem]="3">
+    <button style="width: 300px" ngbNavLink>Three</button>
+    <ng-template ngbNavContent>
+      <div class="col-8 d-flex justify-content-center">
+        <ng-container *ngFor="let category of categories">
+          <app-category [category]="category"></app-category>
+        </ng-container>
+      </div>
+    </ng-template>
+  </li>
+</ul>
+
+<div [ngbNavOutlet]="nav" class="mt-2 bottom"></div>

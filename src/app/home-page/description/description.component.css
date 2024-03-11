@@ -1,0 +1,23 @@
+.container-fluid {
+  min-height: 100vh;
+  position: relative;
+}
+.container-fluid::before {
+  background-image: url("../../../assets/images/businesswoman-using-tablet-analysis.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.6;
+  content: "";
+}
+.col-12 {
+  width: 100%;
+  position: relative;
+  background-color: transparent;
+}
+h1 {
+  font-size: 50px;
+}

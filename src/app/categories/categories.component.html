@@ -1,0 +1,35 @@
+<mat-toolbar
+  class="mat-elevation-z3 d-flex align-items-baseline"
+  style="
+    height: 90px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+  "
+>
+  <div
+    class="col-12"
+    style="width: calc(100%-300px); display: flex; justify-content: center"
+  >
+    <app-header></app-header>
+  </div>
+</mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav
+    class="border border-top-0"
+    opened
+    mode="side"
+    style="width: 300px; background-color: white; color: black"
+    ><app-sidebar></app-sidebar
+  ></mat-sidenav>
+
+  <mat-sidenav-content class="content d-flex flex-column" style="padding: 24px">
+    <div
+      class="search d-flex justify-content-center"
+      style="margin-bottom: 30px"
+    >
+      <app-search></app-search>
+    </div>
+    <div class="contentDiv d-flex flex-wrap justify-content-between"></div
+  ></mat-sidenav-content>
+</mat-sidenav-container>

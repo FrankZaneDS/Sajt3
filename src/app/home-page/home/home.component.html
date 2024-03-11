@@ -1,0 +1,32 @@
+<app-header></app-header>
+<div class="col-12 all">
+  <div class="container-fluid d-flex justify-content-center align-items-center">
+    <div
+      class="row d-flex justify-content-center"
+      style="width: 700px; font-size: 70px"
+    >
+      <div class="col-lg-8 d-grid justify-content-center align-items-center">
+        <h1
+          class="d-flex mb-5 align-items-end justify-content-center"
+          style="font-size: 120px"
+        >
+          Discover.Learn.Enjoy
+        </h1>
+        <h4 class="d-flex justify-content-center" style="font-size: 40px">
+          platform for creatives around the world
+        </h4>
+        <ng-container>
+          <app-search></app-search>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+
+  <div class="color border col-12">
+    <div class="category col-12 d-flex justify-content-center">
+      <ng-container *ngFor="let category of categories">
+        <app-category [category]="category"></app-category>
+      </ng-container>
+    </div>
+  </div>
+</div>

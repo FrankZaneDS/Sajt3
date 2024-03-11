@@ -1,0 +1,23 @@
+p {
+  font-size: 30px;
+  font-style: italic;
+}
+h2 {
+  font-size: 40px;
+}
+
+.img {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+}
+.container {
+  height: 200px;
+  margin-top: 50px;
+  background: transparent;
+  gap: 24px;
+}
+.card {
+  background: transparent;
+  border: none;
+}

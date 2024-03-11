@@ -1,0 +1,54 @@
+.btn {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.numResults {
+  background-color: #00b0ff;
+  color: white;
+  width: 40px;
+  height: 38px;
+}
+.large {
+  max-width: 35rem;
+  height: 35rem;
+  position: relative;
+  border-radius: 50px;
+  p {
+    font-size: 20px;
+  }
+}
+.large::before {
+  background: url("../../../assets/images/businesswoman-using-tablet-analysis.jpg");
+  background-size: cover;
+  border-radius: 50px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.6;
+  content: "";
+  border: 50px;
+}
+.small {
+  height: 35rem;
+  .card-title {
+    font-size: 30px;
+  }
+  p {
+    font-size: 18px;
+  }
+  max-width: 27rem;
+  .image {
+    width: 24rem;
+    height: 20rem;
+    background-size: cover;
+    object-fit: cover;
+    background-image: url("../../../assets/images/businesswoman-using-tablet-analysis.jpg");
+  }
+}
+.card {
+  border-radius: 50px;
+}

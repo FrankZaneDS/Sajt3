@@ -1,0 +1,31 @@
+<div class="filter border">
+  <h2 class="m-5">Add Filter</h2>
+  <ul class="pt-2">
+    <H2>By rate:</H2>
+    <li><app-rating></app-rating></li>
+    <h2>By experience:</h2>
+    <div class="row">
+      <div class="col">
+        <div ngbDropdown class="d-inline-block">
+          <button
+            type="button"
+            class="btn btn-outline-primary"
+            id="dropdownBasic1"
+            ngbDropdownToggle
+          >
+            {{ chosenExp }}
+          </button>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <button
+              *ngFor="let item of exp; let i = index"
+              (click)="onClick(i)"
+              ngbDropdownItem
+            >
+              {{ item }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ul>
+</div>
