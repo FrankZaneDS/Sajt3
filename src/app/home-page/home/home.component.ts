@@ -4,6 +4,7 @@ import { SearchComponent } from '../../shared/search/search.component';
 import { CategoryComponent } from '../../shared/category/category.component';
 import { BrowseTopicsComponent } from '../browse-topics/browse-topics.component';
 import { CommonModule } from '@angular/common';
+import { DataService } from '../../services/data.service';
 
 @Component({
   selector: 'app-home',
@@ -19,18 +20,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
-  categories = [
-    {
-      title: 'Card Title',
-      imgUrl: '',
-      desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque ad ut quo deserunt quod ab animi, aperiam, vero sed natus, velit fugiat sunt saepe rerum? Voluptatem deleniti rerum repellendus consectetur!',
-      class: 'small',
-    },
-    {
-      title: 'Card Title',
-      imgUrl: '',
-      desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque ad ut quo deserunt quod ab animi, aperiam, vero sed natus, velit fugiat sunt saepe rerum? Voluptatem deleniti rerum repellendus consectetur!',
-      class: 'large',
-    },
-  ];
+  categories = this.dataService.categories;
+
+  constructor(private dataService: DataService) {}
 }

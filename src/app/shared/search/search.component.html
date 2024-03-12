@@ -10,14 +10,23 @@
           <!--end of col-->
           <div class="col">
             <input
+              [(ngModel)]="searchText"
+              (ngModelChange)="onSearch(searchText)"
               class="form-control form-control-lg form-control-borderless"
               type="search"
+              name="search"
               placeholder="Search topics or keywords"
             />
           </div>
           <!--end of col-->
           <div class="col-auto">
-            <button class="btn btn-lg btn-success" type="submit">Search</button>
+            <button
+              routerLink="/categories"
+              class="btn btn-lg btn-success"
+              type="submit"
+            >
+              Search
+            </button>
           </div>
           <!--end of col-->
         </div>

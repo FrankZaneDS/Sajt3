@@ -30,6 +30,11 @@
     >
       <app-search></app-search>
     </div>
-    <div class="contentDiv d-flex flex-wrap justify-content-between"></div
+    <div class="contentDiv d-flex flex-wrap">
+      <ng-container
+        *ngFor="let category of categories | filter : searchText : 'title'"
+      >
+        <app-category [category]="category"></app-category>
+      </ng-container></div
   ></mat-sidenav-content>
 </mat-sidenav-container>
