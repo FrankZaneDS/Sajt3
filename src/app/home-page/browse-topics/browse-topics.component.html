@@ -12,7 +12,7 @@
     <ng-template ngbNavContent>
       <div class="col-8 d-flex justify-content-center">
         <ng-container *ngFor="let category of categories">
-          <app-category [category]="category"></app-category>
+          <app-category [category]="category">{{ category.desc }}</app-category>
         </ng-container>
       </div>
     </ng-template>
@@ -22,7 +22,7 @@
     <ng-template ngbNavContent>
       <div class="col-8 d-flex justify-content-center">
         <ng-container *ngFor="let category of categories">
-          <app-category [category]="category"></app-category>
+          <app-category [category]="category">{{ category.desc }}</app-category>
         </ng-container>
       </div>
     </ng-template>
@@ -32,7 +32,7 @@
     <ng-template ngbNavContent>
       <div class="col-8 d-flex justify-content-center">
         <ng-container *ngFor="let category of categories">
-          <app-category [category]="category"></app-category>
+          <app-category [category]="category">{{ category.desc }}</app-category>
         </ng-container>
       </div>
     </ng-template>

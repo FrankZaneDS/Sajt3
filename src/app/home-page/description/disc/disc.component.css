@@ -1,5 +1,5 @@
 p {
-  font-size: 30px;
+  font-size: 1.5em;
   font-style: italic;
 }
 h2 {
@@ -7,8 +7,8 @@ h2 {
 }
 
 .img {
-  width: 150px;
-  height: 150px;
+  width: 10%;
+  height: 100px;
   background-image: url(../../../../assets/images/topics/colleagues-working-cozy-office-medium-shot.png);
   background-size: cover;
   border-radius: 50%;
@@ -17,12 +17,13 @@ h2 {
   height: 200px;
   width: 75%;
 
-  margin-top: 50px;
+  margin-top: 3em;
   background: transparent;
   justify-content: space-between;
-  gap: 24px;
+  gap: 2em;
 }
 .card {
   background: transparent;
   border: none;
+  width: 100%;
 }

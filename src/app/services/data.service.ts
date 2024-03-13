@@ -17,8 +17,18 @@ export class DataService {
       title: 'Second Category',
       imgUrl: '',
       desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque ad ut quo deserunt quod ab animi, aperiam, vero sed natus, velit fugiat sunt saepe rerum? Voluptatem deleniti rerum repellendus consectetur!',
-      class: 'large',
+      class: 'small',
+    },
+    {
+      title: 'Third Category',
+      imgUrl: '',
+      desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque ad ut quo deserunt quod ab animi, aperiam, vero sed natus, velit fugiat sunt saepe rerum? Voluptatem deleniti rerum repellendus consectetur!',
+      class: 'small',
     },
   ];
   constructor() {}
+}
+export interface Category {
+  id: number;
+  name: string;
 }

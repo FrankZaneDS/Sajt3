@@ -24,17 +24,15 @@
   ></mat-sidenav>
 
   <mat-sidenav-content class="content d-flex flex-column" style="padding: 24px">
-    <div
-      class="search d-flex justify-content-center"
-      style="margin-bottom: 30px"
-    >
+    <div class="search">
       <app-search></app-search>
     </div>
-    <div class="contentDiv d-flex flex-wrap">
+    <div class="contentDiv gap-5 d-flex flex-wrap">
       <ng-container
         *ngFor="let category of categories | filter : searchText : 'title'"
       >
-        <app-category [category]="category"></app-category>
-      </ng-container></div
-  ></mat-sidenav-content>
+        <app-category [category]="category">{{ category.desc }}</app-category>
+      </ng-container>
+    </div></mat-sidenav-content
+  >
 </mat-sidenav-container>

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from '../../header/header.component';
 import { SearchComponent } from '../../shared/search/search.component';
-import { CategoryComponent } from '../../shared/category/category.component';
+import { CardComponent } from '../../shared/card/card.component';
 import { BrowseTopicsComponent } from '../browse-topics/browse-topics.component';
 import { CommonModule } from '@angular/common';
 import { DataService } from '../../services/data.service';
@@ -12,7 +12,7 @@ import { DataService } from '../../services/data.service';
   imports: [
     HeaderComponent,
     SearchComponent,
-    CategoryComponent,
+    CardComponent,
     BrowseTopicsComponent,
     CommonModule,
   ],

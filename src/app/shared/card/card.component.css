@@ -14,12 +14,13 @@ a {
   border: none;
 }
 .large {
-  max-width: 45rem;
-  height: 35rem;
+  max-width: 40rem;
+  height: 37rem;
   position: relative;
   border-radius: 50px;
   background-color: #549ea8;
   border: none;
+
   a {
     height: 70px;
     width: 200px;
@@ -38,6 +39,7 @@ a {
 
     font-size: 25px;
   }
+  transition: translate 0.4s ease-in-out;
 }
 .large::before {
   background: url("../../../assets/images/businesswoman-using-tablet-analysis.jpg");
@@ -53,16 +55,24 @@ a {
   border: 50px;
 }
 .large:hover {
-  bottom: 20px;
-  transition: 3s;
+  transform: translateY(-2%);
 }
+
 .small {
-  height: 35rem;
+  min-height: 100%;
+  display: grid;
+  min-width: 30em;
+  max-width: 30em;
+  padding: 0.5em;
   .card-body {
     align-content: center;
+    min-height: 100px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
   }
   .card-title {
-    font-size: 30px;
+    font-size: 2.5em;
   }
   a {
     border-radius: 50px;
@@ -74,26 +84,24 @@ a {
   }
 
   p {
-    font-size: 25px;
+    font-size: 1.5em;
     margin: auto;
     padding: auto;
     color: darkslategray;
   }
-  max-width: 37rem;
+
   .image {
-    width: 32rem;
-    height: 20rem;
+    min-height: 17em;
     background-size: cover;
     object-fit: cover;
     background-image: url("../../../assets/images/topics/undraw_Educator_re_ju47.png");
-    margin: auto;
-    padding: auto;
   }
 }
 .small:hover {
-  transition: 3s;
-  bottom: 20px;
+  transform: translateY(-2%);
+  transition: all 0.4s ease-in-out;
 }
 .card {
   border-radius: 50px;
+  position: relative;
 }

@@ -1,37 +1,17 @@
-<div class="container" style="width: 1000px">
-  <br />
-  <div class="row justify-content-center">
-    <div class="col-12 col-md-10 col-lg-8">
-      <form class="card card-sm">
-        <div class="card-body row no-gutters align-items-center">
-          <div class="col-auto">
-            <i class="fas fa-search h4 text-body"></i>
-          </div>
-          <!--end of col-->
-          <div class="col">
-            <input
-              [(ngModel)]="searchText"
-              (ngModelChange)="onSearch(searchText)"
-              class="form-control form-control-lg form-control-borderless"
-              type="search"
-              name="search"
-              placeholder="Search topics or keywords"
-            />
-          </div>
-          <!--end of col-->
-          <div class="col-auto">
-            <button
-              routerLink="/categories"
-              class="btn btn-lg btn-success"
-              type="submit"
-            >
-              Search
-            </button>
-          </div>
-          <!--end of col-->
-        </div>
-      </form>
+<div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4">
+  <div class="input-group">
+    <input
+      type="search"
+      placeholder="What're you searching for?"
+      aria-describedby="button-addon1"
+      class="form-control border-0 bg-light"
+      [(ngModel)]="searchText"
+      (keydown)="onSearch(searchText)"
+    />
+    <div class="input-group-append">
+      <button id="button-addon1" type="submit" class="btn text-primary">
+        Search
+      </button>
     </div>
-    <!--end of col-->
   </div>
 </div>

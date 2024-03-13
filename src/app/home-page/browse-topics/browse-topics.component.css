@@ -11,7 +11,8 @@ ul {
   padding: auto;
   margin-top: 50px;
   margin-bottom: 100px;
-  height: 600px;
+  min-height: 100%;
+  gap: 2em;
 }
 .title {
   height: 100px;
@@ -22,4 +23,8 @@ ul {
 
 button {
   font-size: 30px;
+  color: #13547a;
+}
+button:hover {
+  color: #13547a;
 }

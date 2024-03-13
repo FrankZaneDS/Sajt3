@@ -6,7 +6,7 @@ import { HeaderComponent } from '../header/header.component';
 import { RatingComponent } from '../shared/rating/rating.component';
 import { SearchComponent } from '../shared/search/search.component';
 import { SidebarComponent } from '../shared/sidebar/sidebar.component';
-import { CategoryComponent } from '../shared/category/category.component';
+import { CardComponent } from '../shared/card/card.component';
 import { DataService } from '../services/data.service';
 import { CommonModule } from '@angular/common';
 import { FilterPipe } from '../pipes/filter.pipe';
@@ -21,7 +21,7 @@ import { FilterPipe } from '../pipes/filter.pipe';
     RatingComponent,
     SearchComponent,
     SidebarComponent,
-    CategoryComponent,
+    CardComponent,
     CommonModule,
     FilterPipe,
   ],

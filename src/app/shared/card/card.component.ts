@@ -4,10 +4,9 @@ import { Component, Input } from '@angular/core';
   selector: 'app-category',
   standalone: true,
   imports: [],
-  templateUrl: './category.component.html',
-  styleUrl: './category.component.css',
+  templateUrl: './card.component.html',
+  styleUrl: './card.component.css',
 })
-export class CategoryComponent {
+export class CardComponent {
   @Input() category;
-  
 }
